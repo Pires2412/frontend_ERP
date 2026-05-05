@@ -54,7 +54,7 @@ function createEditButton() {
         editButton.classList.add('edit__container')
         let editIcon = document.createElement('img')
         editIcon.classList.add('edit__icon')
-        editIcon.src = '/static/resources/images/edit_icon.svg'
+        editIcon.src = './static/resources/images/edit_icon.svg'
         editButton.appendChild(editIcon)
 
         return editButton;
@@ -65,7 +65,7 @@ function createEditButton() {
         deleteButton.classList.add('delete__container')
         let deleteIcon = document.createElement('img')
         deleteIcon.classList.add('delete__icon')
-        deleteIcon.src = '/static/resources/images/delete_icon.svg'
+        deleteIcon.src = './static/resources/images/delete_icon.svg'
         deleteButton.appendChild(deleteIcon)
 
         return deleteButton;
