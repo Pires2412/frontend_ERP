@@ -1,0 +1,43 @@
+:root {
+    --cor-principal-clara: #D0E4FF;
+    --cor-principal-media: #B5C8E7;
+    --cor-principal-escura: #7097D2;
+    --cor-destaque:#00E183;
+    --gradiente-azul: linear-gradient(to bottom, #163C90, #2764F3);
+    --cor-cinza-escuro: #2F3136;
+    --cor-cinza-medio: #8A8B8E;
+    --con-cinza-claro: #E5E5E5;
+}
+
+/* 1. Definindo a versão Normal */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/static/resources/fonts/Roboto-normal.ttf') format('truetype');
+    font-weight: 400; /* ou normal */
+    font-style: normal;
+}
+
+/* 2. Definindo a versão Bold (Negrito) */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/static/resources/fonts/Roboto-bold.ttf') format('truetype');
+    font-weight: 700; /* ou bold */
+    font-style: normal;
+}
+
+/* 3. Definindo a versão Italic */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/static/resources/fonts/Roboto-italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    text-decoration: none;
+    font-family: 'Roboto';
+}

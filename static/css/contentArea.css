@@ -1,0 +1,81 @@
+@import url("/static/css/style.css");
+
+body {
+    display: flex;
+    background-color: #EEE;
+}
+
+#menu {
+    width: 100px;
+    height: 95vh;
+    background-color: var(--cor-principal-clara);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+
+
+.menu__item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    z-index: 2;
+    transform: translateX(0%);
+    background-color: transparent;
+    clip-path: circle(50%);
+}
+
+.menu__box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(50%);
+}
+
+.menu__iconwrapper {
+    width: 70%;
+    height: 70%;
+    background-color: var(--cor-principal-media);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(50%);
+}
+
+.menu__icon {
+    width: 50%;
+    margin: 10px;
+}
+
+.menu__label--hovered {
+    display: flex;
+}
+
+.menu__iconwrapper--hovered {
+    background-color: var(--cor-principal-escura);
+}
+
+#contentView {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.contentwrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
