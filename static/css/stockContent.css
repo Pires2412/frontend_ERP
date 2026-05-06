@@ -106,8 +106,7 @@ main {
 }
 
 table {
-    /*alteração de width para max-width para testes de layout;*/
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     border-collapse: separate;
     border-spacing: 0 10px
