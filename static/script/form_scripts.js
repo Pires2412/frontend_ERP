@@ -30,6 +30,8 @@ async function editItem(element) {
     let tdId = trow.querySelectorAll('td')[0]
     let stringId = tdId.textContent
 
+    console.log(stringId)
+
     let url = `https://backend-application-t80d.onrender.com/products/${stringId}`
 
     try {
