@@ -1,4 +1,4 @@
-let dataSource = 'http://localhost:8080/products/listProducts'
+let dataSource = 'https://backend-application-t80d.onrender.com/products/'
 let table = document.querySelector('table')
 let tableBody = table.querySelector('tbody')
 let searchInput = document.querySelector('.quicksearch__input')
@@ -30,7 +30,7 @@ async function editItem(element) {
     let tdId = trow.querySelectorAll('td')[0]
     let stringId = tdId.textContent
 
-    let url = `http://localhost:8080/products/${stringId}`
+    let url = `${url}${stringId}`
 
     try {
         const response = await fetch(url)
