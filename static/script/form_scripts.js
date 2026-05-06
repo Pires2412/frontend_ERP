@@ -152,7 +152,7 @@ searchInput.addEventListener('input', () => {
 
     debouncerTimer = setTimeout(() => {
         const termo = searchInput.value
-        const newUrl = `http://localhost:8080/products/searchProductWithContain?search=${termo}`
+        const newUrl = `${dataSource}/searchProductWithContain?search=${termo}`
 
         writinTable(newUrl)
     }, 300)
