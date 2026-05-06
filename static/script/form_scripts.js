@@ -43,9 +43,6 @@ async function editItem(element) {
 
         setDataOnForm(data)
 
-        console.log(data)
-
-
     } catch (xcpt) {
         console.log(xcpt.Error)
     }
@@ -135,8 +132,6 @@ async function writinTable(url) {
         if (!response.ok) throw new Error("Falha de requisição")
 
         const produtos = await response.json()
-
-        console.log(produtos)
 
         addElementsOnTable(produtos, tableBody)
 
