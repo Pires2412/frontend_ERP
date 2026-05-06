@@ -1,4 +1,4 @@
-let dataSource = 'https://backend-application-t80d.onrender.com/products'
+let dataSource = 'https://backend-application-t80d.onrender.com/products/listProducts'
 let table = document.querySelector('table')
 let tableBody = table.querySelector('tbody')
 let searchInput = document.querySelector('.quicksearch__input')
@@ -152,7 +152,7 @@ searchInput.addEventListener('input', () => {
 
     debouncerTimer = setTimeout(() => {
         const termo = searchInput.value
-        const newUrl = `${dataSource}/searchProductWithContain?search=${termo}`
+        const newUrl = `https://backend-application-t80d.onrender.com/products/searchProductWithContain?search=${termo}`
 
         writinTable(newUrl)
     }, 300)
