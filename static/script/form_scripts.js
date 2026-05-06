@@ -1,4 +1,4 @@
-let dataSource = 'https://backend-application-t80d.onrender.com/products/'
+let dataSource = 'https://backend-application-t80d.onrender.com/products'
 let table = document.querySelector('table')
 let tableBody = table.querySelector('tbody')
 let searchInput = document.querySelector('.quicksearch__input')
