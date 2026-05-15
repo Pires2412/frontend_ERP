@@ -233,4 +233,7 @@ buttonUpdateForm.addEventListener('click', async (event) => {
 
         console.error(error);
     }
+
+    clearFormulary()
+    writinTable(dataSource)
 });
