@@ -185,3 +185,58 @@ td {
     background-color:white;
     box-shadow: 3px 3px 5px lightgrey;
 }
+
+.wrapperOptionsModal {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.removeProduct,
+.closeModal {
+    padding: 1rem 2rem;
+
+    color: white;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    border-radius: 35px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.removeProduct {
+    background: linear-gradient(135deg, #ff5f6d, #c81d25);
+}
+
+.closeModal {
+    background: linear-gradient(
+        to bottom,
+        var(--cor-principal-escura),
+        var(--cor-principal-media)
+    );
+}
+
+.removeProduct:hover,
+.closeModal:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.96;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.removeProduct:active,
+.closeModal:active {
+    transform: scale(0.98);
+}
