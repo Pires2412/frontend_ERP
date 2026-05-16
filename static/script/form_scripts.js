@@ -237,3 +237,71 @@ buttonUpdateForm.addEventListener('click', async (event) => {
     clearFormulary()
     writinTable(dataSource)
 });
+
+let buttonCreateForm = document.querySelectorAll('.form__button')[2];
+
+buttonCreateForm.addEventListener('click', ()=> {
+    event.preventDefault();
+
+    let payload = {
+
+        nameProduct: document.querySelector(
+            'input[name="nameProduct"]'
+        ).value,
+
+        description: document.querySelector(
+            'input[name="description"]'
+        ).value,
+
+        quantityInStock: Number(document.querySelector(
+            'input[name="quantityInStock"]'
+        ).value),
+
+        purchasePrice: Number(document.querySelector(
+            'input[name="purchasePrice"]'
+        ).value),
+
+        sellingPrice: Number(document.querySelector(
+            'input[name="sellingPrice"]'
+        ).value),
+
+        supplier: document.querySelector(
+            'input[name="supplier"]'
+        ).value,
+
+        category: document.querySelector(
+            'input[name="category"]'
+        ).value,
+
+        subcategory: document.querySelector(
+            'input[name="subcategory"]'
+        ).value
+    };
+
+    try {
+
+        const response = await fetch(
+            'https://backend-application-t80d.onrender.com/products/createNewProduct',
+            {
+                method: 'POST',
+
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+
+                body: JSON.stringify(payload)
+            }
+        );
+
+        const data = await response.json();
+
+        console.log(data);
+
+    } catch(error) {
+
+        console.error(error);
+    }
+
+    clearFormulary()
+    writinTable(dataSource)
+})
