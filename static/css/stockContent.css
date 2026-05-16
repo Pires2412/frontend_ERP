@@ -169,6 +169,10 @@ td {
 
 .deleteModal {
     display: none;
+}
+
+.deleteModal--active {
+    display:flex;
     align-self: center;
     justify-self: center;
     flex-direction: column;
@@ -180,8 +184,4 @@ td {
     border: none;
     background-color:white;
     box-shadow: 3px 3px 5px lightgrey;
-}
-
-.deleteModal--active {
-    display:flex;
 }
