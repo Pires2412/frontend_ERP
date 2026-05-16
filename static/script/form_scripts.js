@@ -240,7 +240,7 @@ buttonUpdateForm.addEventListener('click', async (event) => {
 
 let buttonCreateForm = document.querySelectorAll('.form__button')[2];
 
-buttonCreateForm.addEventListener('click', ()=> {
+buttonCreateForm.addEventListener('click', async (event)=> {
     event.preventDefault();
 
     let payload = {
